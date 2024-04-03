@@ -1,0 +1,195 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background-image: url('CRGS-UDEM-Solar.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.header__content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.header__title {
+    font-size: 2.5em;
+}
+
+.nav {
+    background-color: #333;
+}
+
+.nav__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav__item {
+    margin: 0 15px;
+}
+
+.nav__link {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.nav__link:hover {
+    background-color: #555;
+}
+
+.section {
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.section__title {
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+.section__content {
+    color: #555;
+}
+
+.about-me__content {
+    display: flex;
+    align-items: center;
+}
+
+.about-me__photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 5%;
+    margin-right: 20px;
+}
+
+.about-me__bio {
+    flex: 1;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.projects .project-card {
+    width: calc(33.33% - 20px); /* Ancho de cada tarjeta */
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.projects .project-card .project-card__image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.projects .project-card .project-card__content {
+    padding: 15px;
+}
+
+.projects .project-card .project-card__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.projects .project-card .project-card__description {
+    margin-bottom: 15px;
+    font-size: 1em;
+}
+
+.projects .project-card .project-card__button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.projects .project-card .project-card__button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para pantallas pequeñas (responsive) */
+@media (max-width: 992px) {
+    .projects .project-card {
+        width: calc(50% - 20px); /* Ancho de cada tarjeta en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 768px) {
+    .projects .project-card {
+        width: 100%; /* Ancho de cada tarjeta en pantallas móviles */
+    }
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact-info__item {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+}
+
+.contact-info__item h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.contact-info__item p, .contact-info__item ul {
+    font-size: 1em;
+}
+
+.contact-info__item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info__item ul li {
+    margin-bottom: 5px;
+}
+
+.contact-info__item ul li a {
+    text-decoration: none;
+    color: #007BFF;
+    transition: color 0.3s ease;
+}
+
+.contact-info__item ul li a:hover {
+    color: #0056b3;
+}
